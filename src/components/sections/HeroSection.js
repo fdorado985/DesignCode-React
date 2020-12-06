@@ -17,7 +17,10 @@ function HeroSection() {
             Don’t skip design. Learn design and code by building real apps with
             React and Swift. Complete courses about the best tools.
           </Description>
-          <PurchaseButton />
+          <PurchaseButton
+            title="Start learning"
+            subtitle="120+ hoyrs of video"
+          />
         </TextWrapper>
       </ContentWrapper>
     </Wrapper>
