@@ -6,7 +6,6 @@ function HeroSection() {
     <Wrapper>
       <ContentWrapper>
         <TextWrapper>
-          <img src="/images/logos/logo.svg" alt="logo" />
           <Title>
             Design
             <br /> and code React apps
