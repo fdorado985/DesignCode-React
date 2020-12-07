@@ -10,6 +10,7 @@ export default function PurchaseButton(props) {
       <Wrapper>
         <IconWrapper>
           <Icon src="/images/icons/credit.svg" />
+          <Ring src="/images/icons/icon-ring.svg" />
         </IconWrapper>
         <TextWrapper>
           <Title>{title || "Get Pro Access"}</Title>
@@ -55,6 +56,8 @@ const Icon = styled.img`
   height: 29px;
 `
 
+const Ring = styled.img``
+
 const IconWrapper = styled.div`
   width: 45px;
   height: 45px;
@@ -63,4 +66,5 @@ const IconWrapper = styled.div`
   display: grid;
   justify-content: center;
   align-content: center;
+  justify-self: center;
 `
