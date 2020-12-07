@@ -28,6 +28,8 @@ const Wrapper = styled.div`
     inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   border: 0px;
+  display: grid;
+  grid-template-columns: 53px auto;
 `
 
 const Title = styled(Caption2)`
