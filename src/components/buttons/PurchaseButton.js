@@ -11,8 +11,10 @@ export default function PurchaseButton(props) {
         <IconWrapper>
           <Icon src="/images/icons/credit.svg" />
         </IconWrapper>
-        <Title>{title || "Get Pro Access"}</Title>
-        <Subtitle>{subtitle || "$19 per month"}</Subtitle>
+        <TextWrapper>
+          <Title>{title || "Get Pro Access"}</Title>
+          <Subtitle>{subtitle || "$19 per month"}</Subtitle>
+        </TextWrapper>
       </Wrapper>
     </Link>
   )
@@ -31,6 +33,8 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 53px auto;
 `
+
+const TextWrapper = styled.div``
 
 const Title = styled(Caption2)`
   color: black;

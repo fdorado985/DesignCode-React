@@ -19,7 +19,7 @@ function HeroSection() {
           </Description>
           <PurchaseButton
             title="Start learning"
-            subtitle="120+ hoyrs of video"
+            subtitle="120+ hours of video"
           />
         </TextWrapper>
       </ContentWrapper>
