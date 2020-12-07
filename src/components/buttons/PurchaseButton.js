@@ -33,9 +33,13 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 53px auto;
   align-items: center;
+  gap: 20px;
 `
 
-const TextWrapper = styled.div``
+const TextWrapper = styled.div`
+  display: grid;
+  gap: 4px;
+`
 
 const Title = styled(Caption2)`
   color: black;
