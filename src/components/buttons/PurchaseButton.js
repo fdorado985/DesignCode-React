@@ -32,6 +32,7 @@ const Wrapper = styled.div`
   border: 0px;
   display: grid;
   grid-template-columns: 53px auto;
+  align-items: center;
 `
 
 const TextWrapper = styled.div``
