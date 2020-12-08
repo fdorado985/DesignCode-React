@@ -56,7 +56,11 @@ const Icon = styled.img`
   height: 29px;
 `
 
-const Ring = styled.img``
+const Ring = styled.img`
+  position: absolute;
+  top: -15px;
+  left: -16px;
+`
 
 const IconWrapper = styled.div`
   width: 45px;
@@ -67,4 +71,5 @@ const IconWrapper = styled.div`
   justify-content: center;
   align-content: center;
   justify-self: center;
+  position: relative;
 `
