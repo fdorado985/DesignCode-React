@@ -35,7 +35,7 @@ const Wrapper = styled.div`
   grid-template-columns: 53px auto;
   align-items: center;
   gap: 20px;
-  transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   :hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
