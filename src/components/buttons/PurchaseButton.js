@@ -35,12 +35,13 @@ const Wrapper = styled.div`
   grid-template-columns: 53px auto;
   align-items: center;
   gap: 20px;
-  transition: 1s;
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 
   :hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
       0px 30px 60px rgba(23, 0, 102, 0.5),
       inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
+    transform: translateY(-3px);
   }
 `
 
