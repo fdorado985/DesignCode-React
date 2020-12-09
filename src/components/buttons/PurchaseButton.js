@@ -9,7 +9,7 @@ export default function PurchaseButton(props) {
     <Link to="/page-2">
       <Wrapper>
         <IconWrapper>
-          <Icon src="/images/icons/credit.svg" />
+          <Icon src="/images/icons/credit.svg" className="icon" />
           <Ring src="/images/icons/icon-ring.svg" />
         </IconWrapper>
         <TextWrapper>
@@ -46,6 +46,10 @@ const Wrapper = styled.div`
       0px 30px 60px rgba(23, 0, 102, 0.5),
       inset 0px 0px 0px 0.5px rgba(255, 255, 255, 0.5);
     transform: translateY(-3px);
+
+    .icon {
+      transform: scale(1.2);
+    }
   }
 `
 
