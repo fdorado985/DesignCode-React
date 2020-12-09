@@ -92,4 +92,8 @@ const IconWrapper = styled.div`
   align-content: center;
   justify-self: center;
   position: relative;
+
+  ${Wrapper}:hover & {
+    filter: hue-rotate(10deg) brightness(150%) saturate(120%);
+  }
 `
