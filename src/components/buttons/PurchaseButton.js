@@ -68,6 +68,10 @@ const Ring = styled.img`
   position: absolute;
   top: -15px;
   left: -16px;
+
+  ${Wrapper}:hover & {
+    transform: rotate(30deg) scale(1.2) translate(1px, 1px);
+  }
 `
 
 const IconWrapper = styled.div`
