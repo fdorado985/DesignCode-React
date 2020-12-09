@@ -36,7 +36,8 @@ const Wrapper = styled.div`
   align-items: center;
   gap: 20px;
 
-  * {
+  *,
+  & {
     transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
