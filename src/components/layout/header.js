@@ -14,8 +14,8 @@ const menuData = [
 export default function Header() {
   return (
     <>
-      {menuData.map(item => (
-        <Link to={item.link}>
+      {menuData.map((item, index) => (
+        <Link to={item.link} key={index}>
           <img src={item.icon} />
           {item.title}
         </Link>
