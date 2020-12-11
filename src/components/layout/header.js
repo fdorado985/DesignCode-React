@@ -1,12 +1,20 @@
 import React from "react"
 
-const menuData = ["Courses", "Tutorials", "Livestreams"]
+const menuData = [
+  { title: "Courses", icon: "/images/icons/courses.svg", link: "/courses" },
+  {
+    title: "Tutorials",
+    icon: "/images/icons/tutorials.svg",
+    link: "/tutorials",
+  },
+  { title: "Pricing", icon: "/images/icons/pricing.svg", link: "/pricing" },
+]
 
 export default function Header() {
   return (
     <>
       {menuData.map(item => (
-        <p>{item}</p>
+        <p>{item.title}</p>
       ))}
     </>
   )
