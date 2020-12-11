@@ -28,6 +28,9 @@ const Wrapper = styled.div`
 
   :hover div {
     transform: rotateY(0deg) rotateX(0deg);
+    :hover {
+      filter: brightness(150%) saturate(120%);
+    }
   }
 
   .mockup1 {
