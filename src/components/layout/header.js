@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
 const menuData = [
   { title: "Courses", icon: "/images/icons/courses.svg", link: "/courses" },
@@ -13,13 +14,20 @@ const menuData = [
 
 export default function Header() {
   return (
-    <>
-      {menuData.map((item, index) => (
-        <Link to={item.link} key={index}>
-          <img src={item.icon} alt={item.title} />
-          {item.title}
-        </Link>
-      ))}
-    </>
+    <Wrapper>
+      <img src="/images/logos/logo.svg" />
+      <MenuWrapper>
+        {menuData.map((item, index) => (
+          <Link to={item.link} key={index}>
+            <img src={item.icon} alt={item.title} />
+            {item.title}
+          </Link>
+        ))}
+      </MenuWrapper>
+    </Wrapper>
   )
 }
+
+const Wrapper = styled.div``
+
+const MenuWrapper = styled.div``
