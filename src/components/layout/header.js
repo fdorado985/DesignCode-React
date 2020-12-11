@@ -14,7 +14,10 @@ export default function Header() {
   return (
     <>
       {menuData.map(item => (
-        <p>{item.title}</p>
+        <p>
+          <img src={item.icon} />
+          {item.title}
+        </p>
       ))}
     </>
   )
