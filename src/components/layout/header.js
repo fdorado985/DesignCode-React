@@ -16,7 +16,7 @@ export default function Header() {
     <>
       {menuData.map((item, index) => (
         <Link to={item.link} key={index}>
-          <img src={item.icon} />
+          <img src={item.icon} alt={item.title} />
           {item.title}
         </Link>
       ))}
