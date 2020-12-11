@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 const menuData = [
   { title: "Courses", icon: "/images/icons/courses.svg", link: "/courses" },
@@ -14,10 +15,10 @@ export default function Header() {
   return (
     <>
       {menuData.map(item => (
-        <p>
+        <Link to={item.link}>
           <img src={item.icon} />
           {item.title}
-        </p>
+        </Link>
       ))}
     </>
   )
