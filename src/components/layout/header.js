@@ -39,4 +39,8 @@ const Wrapper = styled.div`
   align-items: center;
 `
 
-const MenuWrapper = styled.div``
+const MenuWrapper = styled.div`
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, auto);
+`
