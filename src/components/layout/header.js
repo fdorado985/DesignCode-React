@@ -19,8 +19,10 @@ export default function Header() {
       <MenuWrapper>
         {menuData.map((item, index) => (
           <Link to={item.link} key={index}>
-            <img src={item.icon} alt={item.title} />
-            {item.title}
+            <MenuItem>
+              <img src={item.icon} alt={item.title} />
+              {item.title}
+            </MenuItem>
           </Link>
         ))}
       </MenuWrapper>
@@ -43,4 +45,13 @@ const MenuWrapper = styled.div`
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(3, auto);
+`
+
+const MenuItem = styled.div`
+  color: rgba(255, 255, 255, 0.7);
+  display: grid;
+  grid-template-columns: 24px auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
 `
