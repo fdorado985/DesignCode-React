@@ -28,6 +28,15 @@ export default function Header() {
   )
 }
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+  position: absolute;
+  top: 60px;
+  display: grid;
+  grid-template-columns: 44px auto;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+`
 
 const MenuWrapper = styled.div``
