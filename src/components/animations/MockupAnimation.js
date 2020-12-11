@@ -15,12 +15,19 @@ export default function MockupAnimation() {
 
 const Wrapper = styled.div`
   position: relative;
-  perspective: 800;
-  perspective-origin: bottom right;
+  perspective: 5000;
 
   div {
     transform: rotateY(-20deg) rotateX(20deg);
-    transform-origin: top left;
+    transform-origin: bottom left;
+  }
+
+  * {
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  :hover div {
+    transform: rotateY(0deg) rotateX(0deg);
   }
 
   .mockup1 {
