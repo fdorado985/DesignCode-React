@@ -2,7 +2,7 @@ import React from "react"
 
 const menuData = ["Courses", "Tutorials", "Livestreams"]
 
-function Header() {
+export default function Header() {
   return (
     <>
       {menuData.map(item => (
