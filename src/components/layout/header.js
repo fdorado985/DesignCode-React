@@ -10,7 +10,7 @@ export default function Header() {
       <MenuWrapper>
         {menuData.map((item, index) => (
           <Link to={item.link} key={index}>
-            <MenuItem>
+            <MenuItem title={item.title}>
               <img src={item.icon} alt={item.title} />
               {item.title}
             </MenuItem>
@@ -42,7 +42,7 @@ const MenuItem = styled.div`
   color: rgba(255, 255, 255, 0.7);
   display: grid;
   grid-template-columns: 24px auto;
-  gap: 10px;
+  gap: ${props => (props.title ? "10px" : "0px")};
   align-items: center;
   padding: 10px;
   transition: 0.5s ease-out;
