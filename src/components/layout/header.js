@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <Wrapper>
       <img src="/images/logos/logo.svg" />
-      <MenuWrapper>
+      <MenuWrapper count={menuData.length}>
         {menuData.map((item, index) => (
           <Link to={item.link} key={index}>
             <MenuItem title={item.title}>
@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 const MenuWrapper = styled.div`
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(${props => props.count}, auto);
 `
 
 const MenuItem = styled.div`
