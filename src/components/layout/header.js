@@ -10,6 +10,8 @@ const menuData = [
     link: "/tutorials",
   },
   { title: "Pricing", icon: "/images/icons/pricing.svg", link: "/pricing" },
+  { title: "", icon: "/images/icons/search.svg", link: "/search" },
+  { title: "", icon: "/images/icons/account.svg", link: "/account" },
 ]
 
 export default function Header() {
@@ -44,7 +46,7 @@ const Wrapper = styled.div`
 const MenuWrapper = styled.div`
   display: grid;
   gap: 30px;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(5, auto);
 `
 
 const MenuItem = styled.div`
