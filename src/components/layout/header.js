@@ -1,5 +1,5 @@
+import { Link } from "gatsby"
 import React from "react"
-
 import styled from "styled-components"
 import { menuData } from "../../data/menuData"
 import MenuButton from "../buttons/MenuButton"
