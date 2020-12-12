@@ -28,4 +28,7 @@ const Wrapper = styled.div`
   right: 30px;
   opacity: ${props => (props.isOpen ? 1 : 0.5)};
   z-index: 1;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 150px;
 `
