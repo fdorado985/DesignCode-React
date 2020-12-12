@@ -5,8 +5,8 @@ export default function MenuTooltip() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <Wrapper onClick={() => setIsOpen(!isOpen)}>
-      {isOpen ? "Open" : "Closed"}
+    <Wrapper isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
+      Button
     </Wrapper>
   )
 }
@@ -22,4 +22,5 @@ const Wrapper = styled.div`
   position: absolute;
   top: 60px;
   right: 30px;
+  opacity: ${props => (props.isOpen ? 1 : 0.5)};
 `
