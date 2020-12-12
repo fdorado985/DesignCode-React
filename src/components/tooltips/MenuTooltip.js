@@ -27,4 +27,5 @@ const Wrapper = styled.div`
   top: 60px;
   right: 30px;
   opacity: ${props => (props.isOpen ? 1 : 0.5)};
+  z-index: 1;
 `
