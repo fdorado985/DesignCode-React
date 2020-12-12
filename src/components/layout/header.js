@@ -7,7 +7,9 @@ import MenuButton from "../buttons/MenuButton"
 export default function Header() {
   return (
     <Wrapper>
-      <img src="/images/logos/logo.svg" />
+      <Link to="/">
+        <img src="/images/logos/logo.svg" />
+      </Link>
       <MenuWrapper count={menuData.length}>
         {menuData.map((item, index) => (
           <MenuButton item={item} key={index} />
