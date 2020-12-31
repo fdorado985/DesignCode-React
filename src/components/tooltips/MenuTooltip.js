@@ -3,11 +3,10 @@ import styled from "styled-components"
 import { tooltipData } from "../../data/menuData"
 import MenuButton from "../buttons/MenuButton"
 
-export default function MenuTooltip() {
-  const [isOpen, setIsOpen] = useState(false)
-
+export default function MenuTooltip(props) {
+  const { isOpen } = props
   return (
-    <Wrapper isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
+    <Wrapper isOpen={isOpen}>
       {tooltipData.map((item, index) => (
         <MenuButton item={item} />
       ))}
