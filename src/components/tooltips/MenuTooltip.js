@@ -31,4 +31,5 @@ const Wrapper = styled.div`
   gap: 10px;
   grid-template-columns: 150px;
   transition: 0.3s ease-in-out;
+  display: ${props => (props.isOpen ? "block" : "none")};
 `
