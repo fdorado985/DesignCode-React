@@ -9,14 +9,18 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <Wrapper onClick={() => setIsOpen(!isOpen)}>
+    <Wrapper>
       <Link to="/">
         <img src="/images/logos/logo.svg" />
       </Link>
       <MenuWrapper count={menuData.length}>
         {menuData.map((item, index) =>
           item.link === "/account" ? (
-            <button>Account</button>
+            <MenuButton
+              item={item}
+              key={index}
+              onClick={() => setIsOpen(!isOpen)}
+            />
           ) : (
             <MenuButton item={item} key={index} />
           )
