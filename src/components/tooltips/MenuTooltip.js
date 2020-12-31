@@ -25,9 +25,10 @@ const Wrapper = styled.div`
   position: absolute;
   top: 60px;
   right: 30px;
-  opacity: ${props => (props.isOpen ? 1 : 0.5)};
+  opacity: ${props => (props.isOpen ? 1 : 0)};
   z-index: 1;
   display: grid;
   gap: 10px;
   grid-template-columns: 150px;
+  transition: 0.3s ease-in-out;
 `
