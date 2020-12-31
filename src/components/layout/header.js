@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <Wrapper>
       <Link to="/">
-        <img src="/images/logos/logo.svg" />
+        <img src="/images/logos/logo.svg" alt="Logo" />
       </Link>
       <MenuWrapper count={menuData.length}>
         {menuData.map((item, index) =>
