@@ -1,3 +1,8 @@
+# Design+Code site using React
+
+A web app with React Hooks, see how the new Design+Code site is built with React Hooks using Gatsby, Netlify, and advanced CSS techniques with Styled Components.
+
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
